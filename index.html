@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kế hoạch giảng dạy Tài chính quốc tế | TH_24DNH01</title>
+
+  <meta name="description" content="Kế hoạch giảng dạy học phần Tài chính quốc tế lớp TH_24DNH01 từ 13/05/2026 đến 29/07/2026, gồm lịch học, thuyết trình nhóm, ôn tập và thi giữa kỳ." />
+  <meta name="keywords" content="Tài chính quốc tế, International Finance, lịch giảng, TH_24DNH01, syllabus, kế hoạch môn học" />
+  <meta name="author" content="PGS.TS Nguyễn Hoàng Chung" />
+
+  <style>
+    :root {
+      --primary: #006b5b;
+      --primary-dark: #004d42;
+      --primary-light: #e8f5f1;
+      --accent: #f4b400;
+      --accent-soft: #fff4cc;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --bg: #f5f7f8;
+      --white: #ffffff;
+      --border: #d9e2e7;
+      --danger: #b42318;
+      --danger-soft: #fee4e2;
+      --info: #175cd3;
+      --info-soft: #eaf2ff;
+      --success: #027a48;
+      --success-soft: #ecfdf3;
+      --shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(0, 107, 91, 0.13), transparent 28%),
+        radial-gradient(circle at top right, rgba(244, 180, 0, 0.13), transparent 25%),
+        var(--bg);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1200px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+    .hero {
+      padding: 42px 0 28px;
+    }
+
+    .hero-card {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: var(--white);
+      border-radius: 28px;
+      padding: 42px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      right: -120px;
+      top: -140px;
+      background: rgba(255, 255, 255, 0.09);
+      border-radius: 50%;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      left: -80px;
+      bottom: -120px;
+      background: rgba(244, 180, 0, 0.18);
+      border-radius: 50%;
+    }
+
+    .badge {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.15);
+      font-weight: 600;
+      font-size: 0.95rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.16;
+      margin: 18px 0 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      opacity: 0.95;
+      margin: 0 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-stat {
+      background: rgba(255, 255, 255, 0.13);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 16px;
+      border-radius: 16px;
+      backdrop-filter: blur(6px);
+    }
+
+    .hero-stat strong {
+      display: block;
+      font-size: 1.45rem;
+      margin-bottom: 4px;
+    }
+
+    .hero-stat span {
+      font-size: 0.94rem;
+      opacity: 0.95;
+    }
+
+    /* NAVIGATION */
+    .nav-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+      background: rgba(245, 247, 248, 0.86);
+      border-bottom: 1px solid rgba(217, 226, 231, 0.95);
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 14px 0;
+    }
+
+    .nav a {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: 0.25s;
+    }
+
+    .nav a:hover {
+      color: var(--white);
+      background: var(--primary);
+      border-color: var(--primary);
+      transform: translateY(-1px);
+    }
+
+    /* SECTIONS */
+    section {
+      margin: 26px 0;
+    }
+
+    .section-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.045);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .section-number {
+      min-width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: var(--primary);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      color: var(--primary-dark);
+      font-size: clamp(1.35rem, 2.6vw, 2rem);
+      line-height: 1.25;
+    }
+
+    .section-title p {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
+    .lead {
+      background: var(--primary-light);
+      border-left: 5px solid var(--primary);
+      padding: 18px 20px;
+      border-radius: 0 16px 16px 0;
+      margin-bottom: 22px;
+    }
+
+    .lead strong {
+      color: var(--primary-dark);
+    }
+
+    /* TABLE */
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      margin-top: 18px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 900px;
+      background: var(--white);
+    }
+
+    th {
+      background: var(--primary-dark);
+      color: var(--white);
+      text-align: center;
+      padding: 14px 12px;
+      font-size: 0.94rem;
+      vertical-align: middle;
+    }
+
+    td {
+      border-top: 1px solid var(--border);
+      padding: 13px 12px;
+      vertical-align: top;
+      font-size: 0.95rem;
+    }
+
+    tr:nth-child(even) td {
+      background: #fbfdfd;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 11px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+
+    .tag.offline {
+      color: var(--success);
+      background: var(--success-soft);
+      border: 1px solid #abefc6;
+    }
+
+    .tag.online {
+      color: var(--info);
+      background: var(--info-soft);
+      border: 1px solid #b2ccff;
+    }
+
+    .tag.exam {
+      color: var(--danger);
+      background: var(--danger-soft);
+      border: 1px solid #fecdca;
+    }
+
+    .tag.presentation {
+      color: #854d0e;
+      background: var(--accent-soft);
+      border: 1px solid #f7d774;
+    }
+
+    /* GRID CARDS */
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .mini-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      background: linear-gradient(180deg, #ffffff, #fcfefd);
+    }
+
+    .mini-card h3 {
+      margin: 0 0 10px;
+      color: var(--primary-dark);
+      font-size: 1.06rem;
+    }
+
+    .mini-card p {
+      margin: 0;
+      color: var(--text);
+    }
+
+    .highlight {
+      background: var(--accent-soft);
+      border: 1px solid #f7d774;
+    }
+
+    /* LIST */
+    ul {
+      padding-left: 22px;
+      margin: 10px 0;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    /* TIMELINE */
+    .timeline {
+      position: relative;
+      margin-top: 24px;
+      padding-left: 28px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(var(--primary), rgba(0, 107, 91, 0.18));
+      border-radius: 999px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 18px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      background: var(--white);
+      border-radius: 16px;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -27px;
+      top: 24px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 3px solid var(--bg);
+    }
+
+    .timeline-item h3 {
+      margin: 0 0 7px;
+      font-size: 1.05rem;
+      color: var(--primary-dark);
+    }
+
+    .timeline-item p {
+      margin: 5px 0;
+    }
+
+    /* EXAM BLOCK */
+    .exam-box {
+      background: linear-gradient(135deg, #fff7ed, #fffdf8);
+      border: 1px solid #fed7aa;
+      border-radius: 18px;
+      padding: 22px;
+      margin-top: 18px;
+    }
+
+    .exam-box h3 {
+      margin: 0 0 10px;
+      color: #9a3412;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 30px 0 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer-card {
+      border-top: 1px solid var(--border);
+      padding-top: 22px;
+    }
+
+    /* PRINT BUTTON */
+    .actions {
+      display: flex;
+      justify-content: flex-end;
+      margin: 18px 0 0;
+    }
+
+    .btn {
+      border: none;
+      cursor: pointer;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-weight: 700;
+      background: var(--primary);
+      color: var(--white);
+      transition: 0.2s ease;
+      font-size: 0.95rem;
+    }
+
+    .btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-4,
+      .grid-3,
+      .grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-card {
+        padding: 30px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .container {
+        width: min(100% - 24px, 1200px);
+      }
+
+      .hero {
+        padding-top: 20px;
+      }
+
+      .hero-grid,
+      .grid-4,
+      .grid-3,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .section-card {
+        padding: 20px;
+      }
+
+      .nav {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 12px;
+      }
+
+      .nav a {
+        flex: 0 0 auto;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .nav-wrap,
+      .actions {
+        display: none;
+      }
+
+      .hero-card,
+      .section-card {
+        box-shadow: none;
+      }
+
+      section {
+        page-break-inside: avoid;
+      }
+
+      .table-wrap {
+        overflow: visible;
+      }
+
+      table {
+        min-width: unset;
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="badge">📘 Kế hoạch giảng dạy học phần</div>
+
+        <h1>TÀI CHÍNH QUỐC TẾ</h1>
+        <h2>International Finance – Lớp TH_24DNH01</h2>
+
+        <div class="hero-grid">
+          <div class="hero-stat">
+            <strong>45 tiết</strong>
+            <span>3 tiết/buổi</span>
+          </div>
+
+          <div class="hero-stat">
+            <strong>15 buổi</strong>
+            <span>Từ 13/05 đến 29/07/2026</span>
+          </div>
+
+          <div class="hero-stat">
+            <strong>8 nhóm</strong>
+            <span>Thuyết trình 15 phút/nhóm</span>
+          </div>
+
+          <div class="hero-stat">
+            <strong>75 phút</strong>
+            <span>Thi giữa kỳ</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn" onclick="window.print()">🖨️ In kế hoạch / Lưu PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <div class="nav-wrap">
+    <div class="container">
+      <nav class="nav">
+        <a href="#tong-quan">Tổng quan</a>
+        <a href="#nguyen-tac">Nguyên tắc phân bổ</a>
+        <a href="#lich-giang">Lịch giảng 15 buổi</a>
+        <a href="#phan-bo-chuong">Phân bổ chương</a>
+        <a href="#thuyet-trinh">Thuyết trình nhóm</a>
+        <a href="#giua-ky">Ôn tập & thi giữa kỳ</a>
+        <a href="#tom-tat">Lịch tóm tắt</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <!-- SECTION 1 -->
+    <section id="tong-quan">
+      <div class="section-card">
+        <div class="section-title">
+          <div class="section-number">1</div>
+          <div>
+            <h2>Tổng quan tổ chức học phần</h2>
+            <p>Kế hoạch được xây dựng cho lớp Tài chính quốc tế (TA) – TH_24DNH01.</p>
+          </div>
+        </div>
+
+        <div class="lead">
+          Học phần được triển khai trong <strong>15 buổi</strong>, mỗi buổi <strong>3 tiết</strong>,
+          từ <strong>13/05/2026 đến 29/07/2026</strong>, bao gồm các buổi học trực tiếp,
+          học trực tuyến theo thời khóa biểu, hoạt động thuyết trình nhóm, ôn tập và kiểm tra giữa kỳ.
+        </div>
+
+        <div class="grid-4">
+          <div class="mini-card">
+            <h3>📅 Thời gian</h3>
+            <p>Tuần 20 đến tuần 31 của học kỳ.</p>
+          </div>
+
+          <div class="mini-card">
+            <h3>🏫 Buổi chính</h3>
+            <p>Thứ Tư, Ca 3.</p>
+          </div>
+
+          <div class="mini-card">
+            <h3>💻 Buổi online bổ sung</h3>
+            <p>Thứ Bảy: 06/06, 13/06, 20/06; Thứ Tư: 08/07, 15/07.</p>
+          </div>
+
+          <div class="mini-card highlight">
+            <h3>🎯 Trọng tâm</h3>
+            <p>PPP, IRP, IFE, arbitrage và công cụ phái sinh tiền tệ.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section id="nguyen-tac">
+      <div class="section-card">
+        <div class="section-title">
+          <div class="section-number">2</div>
+          <div>
+            <h2>Nguyên tắc phân bổ chương trình</h2>
+            <p>Thiết kế theo logic từ nền tảng đến ứng dụng và kiểm tra năng lực vận dụng.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Cụm nội dung</th>
+                <th>Chương</th>
+                <th>Trọng tâm triển khai</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Cụm 1. Nền tảng môn học</strong></td>
+                <td class="center">Chương 1–2</td>
+                <td>MNC, môi trường tài chính quốc tế, thị trường ngoại hối, thị trường tài chính quốc tế.</td>
+              </tr>
+              <tr>
+                <td><strong>Cụm 2. Dòng vốn và tỷ giá</strong></td>
+                <td class="center">Chương 3–5</td>
+                <td>Cán cân thanh toán, dòng thương mại – đầu tư, biến động tỷ giá, cơ chế tỷ giá và vai trò Chính phủ.</td>
+              </tr>
+              <tr>
+                <td><strong>Cụm 3. Lý thuyết cân bằng quốc tế</strong></td>
+                <td class="center">Chương 6–7</td>
+                <td>Arbitrage, IRP, PPP, IFE và các bài tập tính toán trọng tâm.</td>
+              </tr>
+              <tr>
+                <td><strong>Cụm 4. Quản trị rủi ro tỷ giá</strong></td>
+                <td class="center">Chương 8</td>
+                <td>Forward, futures, options, swaps và ứng dụng phòng ngừa rủi ro.</td>
+              </tr>
+              <tr>
+                <td><strong>Cụm 5. Đánh giá quá trình</strong></td>
+                <td class="center">Tích hợp</td>
+                <td>Thuyết trình nhóm, ôn tập 60 phút và thi giữa kỳ 75 phút.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="grid-3" style="margin-top: 20px;">
+          <div class="mini-card">
+            <h3>1. Đảm bảo nội dung giảng</h3>
+            <p>Hoàn thành đầy đủ 8 chương theo đề cương môn học.</p>
+          </div>
+
+          <div class="mini-card">
+            <h3>2. Phân bổ hợp lý online – offline</h3>
+            <p>Các buổi online ưu tiên thảo luận, trình bày nhóm, luyện tập và hệ thống hóa kiến thức.</p>
+          </div>
+
+          <div class="mini-card">
+            <h3>3. Gắn với kiểm tra giữa kỳ</h3>
+            <p>Đề thi được tổ chức sau khi hoàn thành PPP, IRP, IFE và công cụ phái sinh.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section id="lich-giang">
+      <div class="section-card">
+        <div class="section-title">
+          <div class="section-number">3</div>
+          <div>
+            <h2>Lịch giảng chi tiết 15 buổi</h2>
+            <p>Phân bổ nội dung, hoạt động lớp học và đánh giá theo từng buổi.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Buổi</th>
+                <th>Ngày</th>
+                <th>Tuần</th>
+                <th>Hình thức</th>
+                <th>Nội dung giảng dạy</th>
+                <th>Hoạt động lớp học / Đánh giá</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="center"><strong>1</strong></td>
+                <td class="nowrap">13/05/2026</td>
+                <td class="center">20</td>
+                <td class="center"><span class="tag offline">Trực tiếp</span></td>
+                <td>
+                  <strong>Giới thiệu học phần.</strong><br>
+                  Chương 1: Multinational Financial Management – Khái niệm MNC, mục tiêu tối đa hóa giá trị doanh nghiệp, rủi ro trong kinh doanh quốc tế.
+                </td>
+                <td>
+                  Giới thiệu lộ trình học; định hướng phương pháp học; thảo luận mở:
+                  “Vì sao doanh nghiệp nội địa vẫn chịu tác động của tài chính quốc tế?”
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center"><strong>2</strong></td>
+                <td class="nowrap">20/05/2026</td>
+                <td class="center">21</td>
+                <td class="center"><span class="tag offline">Trực tiếp</span></td>
+                <td>
+                  Chương 1 tiếp theo: Phương thức kinh doanh quốc tế; quan hệ giữa MNC và nước sở tại; dòng tiền và định giá MNC.<br>
+                  Mở đầu Chương 2.
+                </td>
+                <td>
+                  Bài tập phân loại international trade, licensing, franchising, joint venture, FDI.<br>
+                  Thành lập <strong>8 nhóm thuyết trình</strong>.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center"><strong>3</strong></td>
+                <td class="nowrap">27/05/2026</td>
+                <td class="center">22</td>
+                <td class="center"><span class="tag offline">Trực tiếp</span></td>
+                <td>
+                  Chương 2: International Financial Markets and Portfolio Investment – Chức năng thị trường tài chính quốc tế; động cơ nhà đầu tư, chủ nợ, người đi vay; thị trường ngoại hối.
+                </td>
+                <td>
+                  Thực hành đọc báo giá tỷ giá; tỷ giá trực tiếp – gián tiếp; bid – ask spread; chuyển đổi tỷ giá.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center"><strong>4</strong></td>
+                <td class="nowrap">03/06/2026</td>
+                <td class="center">23</td>
+                <td class="center"><span class="tag offline">Trực tiếp</span></td>
+                <td>
+                  Chương 2 tiếp theo: Thị trường tiền tệ quốc tế, thị trường tín dụng quốc tế, thị trường trái phiếu quốc tế, thị trường chứng khoán quốc tế; vai trò đối với MNC.
+                </td>
+                <td>
+                  Bài tập ứng dụng; mini case: doanh nghiệp nên vay vốn trong nước hay trên thị trường quốc tế?
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center"><strong>5</strong></td>
+                <td class="nowrap">06/06/2026</td>
+                <td class="center">23</td>
+                <td class="center"><span class="tag online">Online – Thứ Bảy</span></td>
+                <td>
+                  Chương 3: International Trade and Investment – Cán cân thanh toán; resident/non-resident; bút toán kép; current account, capital account, financial account.
+                </td>
+                <td>
+                  Quiz nhanh trực tuyến; luyện ghi nhận giao dịch vào cán cân thanh toán.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center"><strong>6</strong></td>
+                <td class="nowrap">10/06/2026</td>
+                <td class="center">24</td>
+                <td class="center"><span class="tag offline">Trực tiếp</span></td>
+                <td>
+                  Chương 3 tiếp theo: Dòng thương mại, dòng vốn quốc tế; các yếu tố ảnh hưởng đến xuất nhập khẩu và dòng vốn; các tổ chức thúc đẩy dòng vốn quốc tế.
+                </td>
+                <td>
+                  Thảo luận tình huống Việt Nam: lạm phát, thu nhập và tỷ giá ảnh hưởng như thế nào đến cán cân vãng lai?
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center"><strong>7</strong></td>
+                <td class="nowrap">13/06/2026</td>
+                <td class="center">24</td>
+                <td class="center"><span class="tag online">Online – Thứ Bảy</span></td>
+                <td>
+                  Chương 4: Exchange Rate Changes – Đo lường biến động tỷ giá; cung – cầu ngoại tệ; tỷ giá cân bằng; các yếu tố ảnh hưởng đến tỷ giá.
+                </td>
+                <td>
+                  <span class="tag presentation">Thuyết trình Nhóm 1–2</span><br><br>
+                  Mỗi nhóm 15 phút; chủ đề xoay quanh biến động tỷ giá và kỳ vọng thị trường.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center"><strong>8</strong></td>
+                <td class="nowrap">17/06/2026</td>
+                <td class="center">25</td>
+                <td class="center"><span class="tag offline">Trực tiếp</span></td>
+                <td>
+                  Chương 5: Exchange Rate History and the Role of Governments – Chế độ tỷ giá; fixed, floating, managed float, pegged; currency board; dollarization; vai trò ngân hàng trung ương.
+                </td>
+                <td>
+                  Phân tích chính sách: ưu – nhược điểm của cơ chế tỷ giá có quản lý.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center"><strong>9</strong></td>
+                <td class="nowrap">20/06/2026</td>
+                <td class="center">25</td>
+                <td class="center"><span class="tag online">Online – Thứ Bảy</span></td>
+                <td>
+                  Chương 6: International Arbitrage and Covered Interest Rate Parity – Locational arbitrage, triangular arbitrage, covered interest arbitrage.
+                </td>
+                <td>
+                  <span class="tag presentation">Thuyết trình Nhóm 3–4</span><br><br>
+                  Luyện bài tập triangular arbitrage và covered interest arbitrage.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center"><strong>10</strong></td>
+                <td class="nowrap">24/06/2026</td>
+                <td class="center">26</td>
+                <td class="center"><span class="tag offline">Trực tiếp</span></td>
+                <td>
+                  Chương 6 tiếp theo: Interest Rate Parity – forward premium/discount; điều kiện IRP; mối quan hệ giữa lãi suất và tỷ giá kỳ hạn.
+                </td>
+                <td>
+                  Giải bài tập IRP theo quy trình; phân biệt trường hợp có/không có cơ hội covered interest arbitrage.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center"><strong>11</strong></td>
+                <td class="nowrap">01/07/2026</td>
+                <td class="center">27</td>
+                <td class="center"><span class="tag offline">Trực tiếp</span></td>
+                <td>
+                  Chương 7: Relationship between Inflation, Interest Rates and Exchange Rates – Purchasing Power Parity: Absolute PPP, Relative PPP, tỷ giá dự báo theo PPP.
+                </td>
+                <td>
+                  <span class="tag presentation">Thuyết trình Nhóm 5–6</span><br><br>
+                  Bài tập PPP và diễn giải ý nghĩa kinh tế.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center"><strong>12</strong></td>
+                <td class="nowrap">08/07/2026</td>
+                <td class="center">28</td>
+                <td class="center"><span class="tag online">Online – Thứ Tư</span></td>
+                <td>
+                  Chương 7 tiếp theo: International Fisher Effect; so sánh PPP – IRP – IFE; nguyên nhân các lý thuyết không luôn đúng trong thực tế.
+                </td>
+                <td>
+                  Luyện bài tập tổng hợp PPP, IRP, IFE; xây dựng bảng so sánh ba lý thuyết.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center"><strong>13</strong></td>
+                <td class="nowrap">15/07/2026</td>
+                <td class="center">29</td>
+                <td class="center"><span class="tag online">Online – Thứ Tư</span></td>
+                <td>
+                  Chương 8: Market Insurance: Currency Derivatives – Spot, forward, futures, swaps, options; ứng dụng phòng ngừa rủi ro tỷ giá.
+                </td>
+                <td>
+                  <span class="tag presentation">Thuyết trình Nhóm 7–8</span><br><br>
+                  Bài tập hedge khoản phải thu/phải trả ngoại tệ bằng forward và option.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center"><strong>14</strong></td>
+                <td class="nowrap">22/07/2026</td>
+                <td class="center">30</td>
+                <td class="center"><span class="tag exam">Trực tiếp – Kiểm tra</span></td>
+                <td>
+                  Ôn tập kiểm tra giữa kỳ và tổ chức thi giữa kỳ.
+                </td>
+                <td>
+                  <strong>60 phút ôn tập trọng tâm</strong> + <strong>75 phút thi giữa kỳ</strong>.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center"><strong>15</strong></td>
+                <td class="nowrap">29/07/2026</td>
+                <td class="center">31</td>
+                <td class="center"><span class="tag offline">Trực tiếp</span></td>
+                <td>
+                  Chữa đề giữa kỳ; tổng kết học phần; hệ thống hóa mối liên hệ giữa tỷ giá, dòng vốn, lý thuyết cân bằng và công cụ phòng ngừa rủi ro.
+                </td>
+                <td>
+                  Phản hồi lỗi thường gặp; củng cố tư duy làm bài tự luận; định hướng ôn tập cuối kỳ.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section id="phan-bo-chuong">
+      <div class="section-card">
+        <div class="section-title">
+          <div class="section-number">4</div>
+          <div>
+            <h2>Phân bổ nội dung theo chương</h2>
+            <p>Bảo đảm hoàn thành toàn bộ khối lượng nội dung theo đề cương học phần.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Chương</th>
+                <th>Nội dung</th>
+                <th>Số buổi triển khai</th>
+                <th>Ghi chú</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="center"><strong>1</strong></td>
+                <td>Quản trị tài chính công ty đa quốc gia</td>
+                <td class="center">1,5 buổi</td>
+                <td>Buổi 1–2</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>2</strong></td>
+                <td>Thị trường tài chính quốc tế và đầu tư danh mục</td>
+                <td class="center">2 buổi</td>
+                <td>Buổi 2–4</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>3</strong></td>
+                <td>Thương mại, đầu tư quốc tế và cán cân thanh toán</td>
+                <td class="center">2 buổi</td>
+                <td>Buổi 5–6</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>4</strong></td>
+                <td>Biến động tỷ giá</td>
+                <td class="center">1 buổi</td>
+                <td>Buổi 7</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>5</strong></td>
+                <td>Lịch sử tỷ giá và vai trò của Chính phủ</td>
+                <td class="center">1 buổi</td>
+                <td>Buổi 8</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>6</strong></td>
+                <td>Arbitrage quốc tế và IRP</td>
+                <td class="center">2 buổi</td>
+                <td>Buổi 9–10</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>7</strong></td>
+                <td>PPP, IFE và quan hệ lạm phát – lãi suất – tỷ giá</td>
+                <td class="center">2 buổi</td>
+                <td>Buổi 11–12</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>8</strong></td>
+                <td>Công cụ phái sinh tiền tệ</td>
+                <td class="center">1 buổi trọng tâm</td>
+                <td>Buổi 13, củng cố thêm trong ôn tập</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>Đánh giá</strong></td>
+                <td>Ôn tập, thi giữa kỳ, chữa bài và tổng kết</td>
+                <td class="center">2 buổi</td>
+                <td>Buổi 14–15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section id="thuyet-trinh">
+      <div class="section-card">
+        <div class="section-title">
+          <div class="section-number">5</div>
+          <div>
+            <h2>Thiết kế hoạt động thuyết trình nhóm</h2>
+            <p>Gắn đánh giá quá trình với tư duy phản biện và khả năng liên hệ thực tiễn.</p>
+          </div>
+        </div>
+
+        <div class="grid-4">
+          <div class="mini-card">
+            <h3>👥 Số nhóm</h3>
+            <p>8 nhóm.</p>
+          </div>
+
+          <div class="mini-card">
+            <h3>⏱️ Thời lượng</h3>
+            <p>15 phút trình bày/nhóm.</p>
+          </div>
+
+          <div class="mini-card">
+            <h3>💬 Phản biện</h3>
+            <p>3–5 phút hỏi đáp sau mỗi nhóm.</p>
+          </div>
+
+          <div class="mini-card highlight">
+            <h3>📊 Sản phẩm</h3>
+            <p>Slide + ví dụ thực tiễn + câu hỏi tương tác.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Nhóm</th>
+                <th>Chủ đề đề xuất</th>
+                <th>Gắn với chương</th>
+                <th>Dự kiến buổi trình bày</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="center"><strong>1</strong></td>
+                <td>Các yếu tố ảnh hưởng đến biến động tỷ giá USD/VND trong bối cảnh Việt Nam.</td>
+                <td class="center">Chương 4</td>
+                <td class="center">Buổi 7</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>2</strong></td>
+                <td>Kỳ vọng thị trường, tin tức vĩ mô và đầu cơ tỷ giá.</td>
+                <td class="center">Chương 4</td>
+                <td class="center">Buổi 7</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>3</strong></td>
+                <td>So sánh các chế độ tỷ giá và bài học chính sách cho nền kinh tế mới nổi.</td>
+                <td class="center">Chương 5</td>
+                <td class="center">Buổi 9</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>4</strong></td>
+                <td>Can thiệp của Ngân hàng Trung ương trên thị trường ngoại hối.</td>
+                <td class="center">Chương 5</td>
+                <td class="center">Buổi 9</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>5</strong></td>
+                <td>Arbitrage quốc tế: Locational, Triangular và Covered Interest Arbitrage.</td>
+                <td class="center">Chương 6</td>
+                <td class="center">Buổi 11</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>6</strong></td>
+                <td>Interest Rate Parity và ứng dụng trong định giá tỷ giá kỳ hạn.</td>
+                <td class="center">Chương 6</td>
+                <td class="center">Buổi 11</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>7</strong></td>
+                <td>So sánh PPP, IRP và IFE trong giải thích biến động tỷ giá.</td>
+                <td class="center">Chương 7</td>
+                <td class="center">Buổi 13</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>8</strong></td>
+                <td>Ứng dụng forward, futures và options trong phòng ngừa rủi ro tỷ giá.</td>
+                <td class="center">Chương 8</td>
+                <td class="center">Buổi 13</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 -->
+    <section id="giua-ky">
+      <div class="section-card">
+        <div class="section-title">
+          <div class="section-number">6</div>
+          <div>
+            <h2>Ôn tập và kiểm tra giữa kỳ</h2>
+            <p>Thiết kế phù hợp với các nội dung định lượng trọng tâm của học phần.</p>
+          </div>
+        </div>
+
+        <div class="exam-box">
+          <h3>📌 Buổi 14 – Ngày 22/07/2026</h3>
+          <p>
+            Tổ chức <strong>60 phút ôn tập trọng tâm</strong> trước khi thực hiện
+            <strong>kiểm tra giữa kỳ 75 phút</strong>.
+          </p>
+        </div>
+
+        <h3 style="color: var(--primary-dark); margin-top: 24px;">6.1. Nội dung ôn tập 60 phút</h3>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Nội dung ôn tập</th>
+                <th>Thời lượng gợi ý</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hệ thống hóa công thức PPP, IRP, IFE.</td>
+                <td class="center">15 phút</td>
+              </tr>
+              <tr>
+                <td>Nhận diện bài tập arbitrage và điều kiện có/không có arbitrage.</td>
+                <td class="center">10 phút</td>
+              </tr>
+              <tr>
+                <td>Forward premium/discount và tỷ giá kỳ hạn.</td>
+                <td class="center">10 phút</td>
+              </tr>
+              <tr>
+                <td>Phòng ngừa rủi ro bằng forward, futures, options.</td>
+                <td class="center">15 phút</td>
+              </tr>
+              <tr>
+                <td>Hướng dẫn cấu trúc bài thi và chiến lược làm bài.</td>
+                <td class="center">10 phút</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="color: var(--primary-dark); margin-top: 28px;">6.2. Cấu trúc đề thi giữa kỳ</h3>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Phần</th>
+                <th>Nội dung</th>
+                <th>Số lượng</th>
+                <th>Tỷ trọng gợi ý</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="center"><strong>A</strong></td>
+                <td>Trắc nghiệm lý thuyết.</td>
+                <td class="center">20 câu</td>
+                <td class="center">40%</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>B</strong></td>
+                <td>Bài tập tự luận số 1: PPP / IRP / IFE.</td>
+                <td class="center">1 bài</td>
+                <td class="center">30%</td>
+              </tr>
+              <tr>
+                <td class="center"><strong>C</strong></td>
+                <td>Bài tập tự luận số 2: Công cụ phái sinh tiền tệ – forward, futures, options.</td>
+                <td class="center">1 bài</td>
+                <td class="center">30%</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="center"><strong>Tổng cộng</strong></td>
+                <td class="center"><strong>100%</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="grid-2" style="margin-top: 22px;">
+          <div class="mini-card">
+            <h3>Phạm vi trắc nghiệm</h3>
+            <ul>
+              <li>MNC và phương thức kinh doanh quốc tế.</li>
+              <li>Thị trường tài chính quốc tế.</li>
+              <li>Cán cân thanh toán.</li>
+              <li>Nhân tố ảnh hưởng đến tỷ giá.</li>
+              <li>Chế độ tỷ giá và can thiệp Chính phủ.</li>
+              <li>Arbitrage, PPP, IRP, IFE.</li>
+              <li>Forward, futures, options.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card">
+            <h3>Phạm vi tự luận tính toán</h3>
+            <ul>
+              <li>Tính tỷ giá dự báo theo PPP.</li>
+              <li>Xác định biến động tỷ giá theo IFE.</li>
+              <li>Kiểm tra IRP / Covered Interest Arbitrage.</li>
+              <li>Forward premium và discount.</li>
+              <li>Hedging khoản phải thu/phải trả ngoại tệ bằng forward hoặc option.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7 -->
+    <section id="tom-tat">
+      <div class="section-card">
+        <div class="section-title">
+          <div class="section-number">7</div>
+          <div>
+            <h2>Lịch giảng tóm tắt dạng LMS / Excel</h2>
+            <p>Bảng rút gọn có thể dùng để nhập nhanh vào hệ thống quản lý học tập.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Buổi</th>
+                <th>Ngày</th>
+                <th>Hình thức</th>
+                <th>Nội dung chính</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="center">1</td>
+                <td class="center">13/05</td>
+                <td class="center">Trực tiếp</td>
+                <td>Giới thiệu môn học; Chương 1.</td>
+              </tr>
+              <tr>
+                <td class="center">2</td>
+                <td class="center">20/05</td>
+                <td class="center">Trực tiếp</td>
+                <td>Chương 1 tiếp; mở đầu Chương 2.</td>
+              </tr>
+              <tr>
+                <td class="center">3</td>
+                <td class="center">27/05</td>
+                <td class="center">Trực tiếp</td>
+                <td>Chương 2: Thị trường tài chính quốc tế.</td>
+              </tr>
+              <tr>
+                <td class="center">4</td>
+                <td class="center">03/06</td>
+                <td class="center">Trực tiếp</td>
+                <td>Chương 2 tiếp + bài tập.</td>
+              </tr>
+              <tr>
+                <td class="center">5</td>
+                <td class="center">06/06</td>
+                <td class="center">Online</td>
+                <td>Chương 3: Cán cân thanh toán.</td>
+              </tr>
+              <tr>
+                <td class="center">6</td>
+                <td class="center">10/06</td>
+                <td class="center">Trực tiếp</td>
+                <td>Chương 3: Dòng thương mại và dòng vốn.</td>
+              </tr>
+              <tr>
+                <td class="center">7</td>
+                <td class="center">13/06</td>
+                <td class="center">Online</td>
+                <td>Chương 4 + Thuyết trình nhóm 1–2.</td>
+              </tr>
+              <tr>
+                <td class="center">8</td>
+                <td class="center">17/06</td>
+                <td class="center">Trực tiếp</td>
+                <td>Chương 5.</td>
+              </tr>
+              <tr>
+                <td class="center">9</td>
+                <td class="center">20/06</td>
+                <td class="center">Online</td>
+                <td>Chương 6 + Thuyết trình nhóm 3–4.</td>
+              </tr>
+              <tr>
+                <td class="center">10</td>
+                <td class="center">24/06</td>
+                <td class="center">Trực tiếp</td>
+                <td>Chương 6: IRP và bài tập.</td>
+              </tr>
+              <tr>
+                <td class="center">11</td>
+                <td class="center">01/07</td>
+                <td class="center">Trực tiếp</td>
+                <td>Chương 7: PPP + Thuyết trình nhóm 5–6.</td>
+              </tr>
+              <tr>
+                <td class="center">12</td>
+                <td class="center">08/07</td>
+                <td class="center">Online</td>
+                <td>Chương 7: IFE; so sánh PPP – IRP – IFE.</td>
+              </tr>
+              <tr>
+                <td class="center">13</td>
+                <td class="center">15/07</td>
+                <td class="center">Online</td>
+                <td>Chương 8 + Thuyết trình nhóm 7–8.</td>
+              </tr>
+              <tr>
+                <td class="center">14</td>
+                <td class="center">22/07</td>
+                <td class="center">Trực tiếp</td>
+                <td>Ôn tập 60 phút + Thi giữa kỳ 75 phút.</td>
+              </tr>
+              <tr>
+                <td class="center">15</td>
+                <td class="center">29/07</td>
+                <td class="center">Trực tiếp</td>
+                <td>Chữa đề giữa kỳ + tổng kết học phần.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Giai đoạn 1: Nền tảng học phần</h3>
+            <p>Buổi 1–4: MNC, thị trường tài chính quốc tế, ngoại hối và đầu tư quốc tế.</p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Giai đoạn 2: Dòng vốn – tỷ giá – chính sách</h3>
+            <p>Buổi 5–8: Cán cân thanh toán, dòng vốn, biến động tỷ giá và vai trò Chính phủ.</p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Giai đoạn 3: Lý thuyết cân bằng quốc tế</h3>
+            <p>Buổi 9–12: Arbitrage, IRP, PPP, IFE và luyện bài tập trọng tâm.</p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Giai đoạn 4: Phòng ngừa rủi ro và đánh giá</h3>
+            <p>Buổi 13–15: Công cụ phái sinh, ôn tập, thi giữa kỳ, chữa bài và tổng kết.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-card">
+        <strong>Kế hoạch giảng dạy học phần Tài chính quốc tế – International Finance</strong><br>
+        Lớp TH_24DNH01 | Học kỳ 2026 | Thiết kế phục vụ quản lý giảng dạy, công bố LMS và GitHub Pages.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
